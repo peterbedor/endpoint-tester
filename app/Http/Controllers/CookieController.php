@@ -15,10 +15,12 @@ class CookieController extends Controller
 
 	public function set(Request $request)
 	{
-		setcookie(
-			$request->input('key'),
-			$request->input('val')
-		);
+		if (! $request->cookie($request->input('key'))) {
+			setcookie(
+				$request->input('key'),
+				$request->input('val')
+			);
+		}
 
 		return redirect('/cookies');
 	}
