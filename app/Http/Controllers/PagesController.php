@@ -10,16 +10,16 @@ class PagesController extends Controller
 				'link' => '/',
 				'description' => 'This page.'
 			],
-			'/ip' => [
-				'link' => '/ip',
+			'/get/ip' => [
+				'link' => '/get/ip',
 				'description' => 'Returns Origin IP.'
 			],
-			'/user-agent' => [
-				'link' => '/user-agent',
+			'/get/user-agent' => [
+				'link' => '/get/user-agent',
 				'description' => 'Returns user-agent.'
 			],
-			'/headers' => [
-				'link' => '/headers',
+			'/get/headers' => [
+				'link' => '/get/headers',
 				'description' => 'Returns header dict.'
 			],
 			'/get' => [
@@ -54,7 +54,7 @@ class PagesController extends Controller
 				'link' => '/cookies',
 				'description' => 'Returns cookie data.'
 			],
-			'/cookies/set?name=test&value=value' => [
+			'/cookies/set?name=cookieName&value=cookieValue' => [
 				'link' => '/cookies/set?name=cookieName&value=cookieValue',
 				'description' => 'Sets one or more simple cookies.'
 			],
